@@ -1,0 +1,28 @@
+pipeline:
+  min_confidence: 0.25
+  ball_class: ball
+  player_classes:
+    - player
+  max_ball_distance: 120.0
+  max_ball_distance_m: 3.0
+  ball_min_confidence: 0.25
+  possession_confirm_observations: 2
+  possession_release_observations: 2
+  max_speed: 250.0
+  nms_iou_threshold: 0.5
+  containment_threshold: 0.9
+  person_duplicate_containment_threshold: 0.75
+  person_duplicate_footpoint_distance_ratio: 0.2
+  person_duplicate_center_distance_ratio: 0.5
+  person_duplicate_min_height_ratio: 0.55
+  person_duplicate_max_appearance_distance: 0.15
+tracker:
+  max_age: 10
+  min_hits: 1
+association:
+  iou_weight: 0.45
+  center_weight: 0.35
+  appearance_weight: 0.20
+  max_center_distance: 100.0
+  min_iou: 0.0
+  max_cost: 0.95

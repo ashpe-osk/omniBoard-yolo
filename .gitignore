@@ -1,0 +1,61 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE and editor state
+.vscode/
+.idea/
+*.code-workspace
+
+# Local credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.secret
+
+# Local videos and other video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.mpeg
+*.mpg
+*.m4v
+*.webm
+
+# Model weights and compiled checkpoints
+*.pt
+*.pth
+*.onnx
+*.weights
+*.engine
+*.ckpt
+*.safetensors
+/models/
+
+# Generated evaluation artifacts
+/outputs/
+/runs/
+/debug/
+/logs/
+/tmp/
+/temp/
+**/debug/
+
+# Temporary files and OS metadata
+*.log
+*.tmp
+*.temp
+*.bak
+.DS_Store
+Thumbs.db
